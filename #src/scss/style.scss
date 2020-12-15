@@ -1,0 +1,32 @@
+@import "flex.scss";
+@import "mixins.scss";
+@import "header.scss";
+@import "article.scss";
+@import "sections.scss";
+@import "footer.scss";
+@import "modal_signIn.scss";
+
+body {
+  margin: 0;
+
+  background-image: url("../img/background.png");
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  background-color: #070707;
+}
+
+#post{
+  @include buttons();
+
+  width: 100%;
+  margin-right: 0;
+}
+
+.record-form, .section__gallery{
+  box-sizing: border-box;
+  padding-left: 55px;
+}
+
+.hide {
+  display: none;
+}

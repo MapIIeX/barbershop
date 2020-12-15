@@ -1,0 +1,32 @@
+header{
+  padding: 0 130px;
+  height: 72px;
+  //
+  color: white;
+  background: black;
+  //
+  @include between();
+  align-items: center;
+  //
+  @include fonts(16px, 20px);
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      margin: 0 20px;
+    }
+  }
+  div {
+    * {
+      display: block;
+    }
+    display: flex;
+    align-items: center;
+  }
+img {
+  margin-right: 15px;
+}
+  }

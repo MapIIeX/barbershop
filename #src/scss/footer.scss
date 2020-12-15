@@ -1,0 +1,33 @@
+footer {
+  padding: 40px 165px 30px 165px;
+  margin-top: 50px;
+  //
+  color: white;
+  background: url("../img/footer.png");
+  //
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  .center{
+    justify-self: center;
+    margin-left: -20px;
+  }
+  p {
+    max-width: 315px;
+    @include fonts(14px, 24px)
+  }
+  .wrapper {
+    div {
+      margin: 5px;
+      width: 42px;
+      height: 42px;
+      box-sizing: border-box;
+      //
+      background: black;
+      //
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

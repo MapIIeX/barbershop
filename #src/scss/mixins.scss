@@ -1,0 +1,21 @@
+@mixin fonts($size, $height){
+  font-family: "PT Sans Narrow";
+  font-weight: bold;
+  font-size: $size;
+  line-height: $height;
+  text-transform: uppercase;
+}
+
+@mixin buttons{
+  box-sizing: border-box;
+  padding: 17px;
+  width: 150px;
+  //
+  color: white;
+  background: black;
+  border: none;
+  //
+  @include fonts(14px, 24px);
+  text-decoration: none;
+  text-align: center;
+}

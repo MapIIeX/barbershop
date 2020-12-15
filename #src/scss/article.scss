@@ -1,0 +1,33 @@
+article {
+  color: white;
+  img {
+    display: block;
+    margin: 50px auto 0 auto;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    div {
+      margin: 0 10px;
+      max-width: 300px;
+      //
+      text-align: center;
+      div {
+        width: 20px;
+        height: 20px;
+        margin: -5px auto 27px;
+        //
+        background: white;
+        transform: rotate(45deg);
+
+      }
+    }
+  }
+  h1 {
+    @include fonts(30px, 42px);
+  }
+  p {
+    @include fonts(14px, 24px);
+  }
+}

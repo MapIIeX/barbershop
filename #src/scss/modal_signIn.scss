@@ -1,0 +1,115 @@
+.modal__signIn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //
+  width: 460px;
+  max-width: 100%;
+  height: 370px;
+  max-height: 100%;
+  box-sizing: border-box;
+  padding: 15px 65px 65px 65px;
+  //
+  background: url("../img/gray_back.png");
+  input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    cursor: pointer;
+    //
+    color: black;
+    @include fonts(14px, 14px);
+    &:before{
+      content: "✖";
+      display: inline-block;
+      //
+      margin-right: 10px;
+      width: 17px;
+      height: 17px;
+      //
+      color: white;
+      background: white;
+      border: solid 2px black;
+      //
+      @include fonts(17px, 17px);
+      text-align: center;
+    }
+  }
+  input:checked + label:before {
+    content: "✖";
+    color: black;
+  }
+  input {
+    display: block;
+  }
+  input[type="text"], input[type="password"]{
+    width: 298px;
+    padding: 15px;
+    margin: 10px 0;
+    //
+    border: solid 2px;
+    //
+    @include fonts(14px, 14px);
+    &::placeholder{
+      @include fonts(14px, 14px);
+      color: black;
+    }
+
+  }
+  .form__wrapper{
+    *{
+      display: block;
+    }
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  h1{
+    @include fonts(30px, 42px);
+  }
+  p {
+    @include fonts(14px, 14px);
+  }
+  a {
+    color: black;
+    @include fonts(14px, 14px);
+  }
+  button{
+    width: 100%;
+    height: 40px;
+    margin-top: 12px;
+    @include fonts(14px, 14px);
+    color: white;
+    background: black;
+    padding: 12px 0;
+    text-align: center;
+    border: none;
+  }
+  .close__modal{
+    cursor: pointer;
+    top: 0;
+    position: absolute;
+    right: -45px;
+    font-size: 35px;
+    line-height: 35px;
+    color: lightgray;
+    font-weight: bolder;
+  }
+  z-index: 3;
+}
+
+.modal__overlay{
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: opacity(70%);
+  background: black;
+}
+
+#login__button{
+  cursor: pointer;
+}
